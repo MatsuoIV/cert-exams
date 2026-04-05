@@ -1,4 +1,5 @@
 import type { ExamData, Option, UserAnswers } from '../types/exam'
+import { FeedbackButton } from './FeedbackButton'
 
 interface ExamSummaryProps {
   examData: ExamData
@@ -111,9 +112,12 @@ export function ExamSummary({
         })}
       </ol>
 
-      <button onClick={onRestart} className="btn btn--primary">
-        Reiniciar examen
-      </button>
+      <div className="summary-footer">
+        <button onClick={onRestart} className="btn btn--primary">
+          Reiniciar examen
+        </button>
+        <FeedbackButton />
+      </div>
     </div>
   )
 }

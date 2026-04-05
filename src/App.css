@@ -417,6 +417,28 @@
   background: #0e1f35;
 }
 
+.btn--feedback {
+  background: transparent;
+  color: #9fd3c7;
+  border: 1px solid #9fd3c7;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn--feedback:hover {
+  background: #9fd3c7;
+  color: #142d4c;
+}
+
+.summary-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 /* ── Summary ────────────────────────────────────────────── */
 .summary {
   display: flex;

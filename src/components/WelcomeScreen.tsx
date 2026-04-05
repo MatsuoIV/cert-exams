@@ -1,3 +1,5 @@
+import { FeedbackButton } from './FeedbackButton'
+
 interface WelcomeScreenProps {
   title: string
   description?: string
@@ -44,6 +46,8 @@ export function WelcomeScreen({
           Start exam
         </button>
       </div>
+
+      <FeedbackButton />
 
       <footer className="welcome-footer">
         Made with love, patience, Sertraline and Chicken Soup

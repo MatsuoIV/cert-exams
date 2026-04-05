@@ -31,6 +31,7 @@ jobs:
         run: npm run build
         env:
           VITE_EXAM_DURATION_MINUTES: ${{ vars.VITE_EXAM_DURATION_MINUTES || '30' }}
+          VITE_FEEDBACK_FORM_URL: ${{ vars.VITE_FEEDBACK_FORM_URL }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
