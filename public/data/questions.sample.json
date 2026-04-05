@@ -1,0 +1,66 @@
+{
+  "title": "Examen de Ejemplo",
+  "description": "Preguntas de muestra para demostrar la plataforma.",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "¿Cuál es la capital de Francia?",
+      "options": [
+        { "id": "a", "text": "Madrid" },
+        { "id": "b", "text": "París" },
+        { "id": "c", "text": "Roma" },
+        { "id": "d", "text": "Berlín" }
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "París es la capital y ciudad más grande de Francia."
+    },
+    {
+      "id": "q2",
+      "text": "¿Cuáles de los siguientes son lenguajes de programación? (Selecciona todos los que apliquen)",
+      "options": [
+        { "id": "a", "text": "Python" },
+        { "id": "b", "text": "HTML" },
+        { "id": "c", "text": "JavaScript" },
+        { "id": "d", "text": "CSS" }
+      ],
+      "correctAnswers": ["a", "c"],
+      "explanation": "Python y JavaScript son lenguajes de programación. HTML y CSS son lenguajes de marcado y estilos, respectivamente."
+    },
+    {
+      "id": "q3",
+      "text": "¿Cuántos planetas tiene el sistema solar?",
+      "options": [
+        { "id": "a", "text": "7" },
+        { "id": "b", "text": "8" },
+        { "id": "c", "text": "9" },
+        { "id": "d", "text": "10" }
+      ],
+      "correctAnswers": ["b"],
+      "explanation": "El sistema solar tiene 8 planetas: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno. Plutón fue reclasificado como planeta enano en 2006."
+    },
+    {
+      "id": "q4",
+      "text": "¿Cuáles son principios del diseño SOLID? (Selecciona todos los que apliquen)",
+      "options": [
+        { "id": "a", "text": "Single Responsibility Principle" },
+        { "id": "b", "text": "Simple Object Principle" },
+        { "id": "c", "text": "Open/Closed Principle" },
+        { "id": "d", "text": "Liskov Substitution Principle" }
+      ],
+      "correctAnswers": ["a", "c", "d"],
+      "explanation": "S, O, y L corresponden a Single Responsibility, Open/Closed y Liskov Substitution. 'Simple Object Principle' no es parte de SOLID."
+    },
+    {
+      "id": "q5",
+      "text": "¿Qué estructura de datos sigue el principio LIFO (Last In, First Out)?",
+      "options": [
+        { "id": "a", "text": "Cola (Queue)" },
+        { "id": "b", "text": "Lista enlazada" },
+        { "id": "c", "text": "Pila (Stack)" },
+        { "id": "d", "text": "Árbol binario" }
+      ],
+      "correctAnswers": ["c"],
+      "explanation": "Una Pila (Stack) sigue el principio LIFO: el último elemento en entrar es el primero en salir."
+    }
+  ]
+}
