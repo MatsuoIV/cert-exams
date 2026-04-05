@@ -8,7 +8,7 @@ import { QuestionNavigator } from './components/QuestionNavigator'
 import { EXAM_DURATION_SECONDS } from './config'
 import './App.css'
 
-const DATA_URL = '/data/questions.json'
+const DATA_URL = `${import.meta.env.BASE_URL}data/questions.json`
 
 export default function App() {
   const {
