@@ -44,6 +44,10 @@ export function WelcomeScreen({
           Iniciar examen
         </button>
       </div>
+
+      <footer className="welcome-footer">
+        Hecho con amor, paciencia, Sertralina y Caldo de Gallina
+      </footer>
     </div>
   )
 }
