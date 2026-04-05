@@ -9,7 +9,7 @@ interface WelcomeScreenProps {
 function formatDuration(seconds: number): string {
   if (seconds <= 0) return 'Sin límite de tiempo'
   const minutes = Math.round(seconds / 60)
-  return `${minutes} minuto${minutes !== 1 ? 's' : ''}`
+  return `${minutes} minute${minutes !== 1 ? 's' : ''}`
 }
 
 export function WelcomeScreen({
@@ -28,7 +28,7 @@ export function WelcomeScreen({
         <ul className="welcome-meta">
           <li>
             <span className="welcome-meta-icon">📋</span>
-            <span><strong>{totalQuestions}</strong> preguntas</span>
+            <span><strong>{totalQuestions}</strong> questions</span>
           </li>
           <li>
             <span className="welcome-meta-icon">⏱</span>
@@ -36,17 +36,17 @@ export function WelcomeScreen({
           </li>
           <li>
             <span className="welcome-meta-icon">🔀</span>
-            <span>Las preguntas se presentan en orden aleatorio</span>
+            <span>Questions presented in random order</span>
           </li>
         </ul>
 
         <button className="btn btn--primary btn--large" onClick={onStart}>
-          Iniciar examen
+          Start exam
         </button>
       </div>
 
       <footer className="welcome-footer">
-        Hecho con amor, paciencia, Sertralina y Caldo de Gallina
+        Made with love, patience, Sertraline and Chicken Soup
       </footer>
     </div>
   )
