@@ -14,7 +14,7 @@ export function QuestionNavigator({
   userAnswers,
   onGoTo,
 }: QuestionNavigatorProps) {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(() => window.innerWidth >= 640)
 
   const answeredCount = questions.filter((q) => (userAnswers[q.id] ?? []).length > 0).length
 
@@ -25,9 +25,9 @@ export function QuestionNavigator({
         onClick={() => setIsOpen((o) => !o)}
         aria-expanded={isOpen}
       >
-        <span>Mapa de preguntas</span>
+        <span>Question Map</span>
         <span className="navigator-toggle-meta">
-          {answeredCount} / {questions.length} respondidas
+          {answeredCount} / {questions.length} answered
         </span>
         <span className="navigator-toggle-arrow">{isOpen ? '▲' : '▼'}</span>
       </button>
@@ -49,7 +49,7 @@ export function QuestionNavigator({
                 role="listitem"
                 className={`navigator-btn navigator-btn--${state}`}
                 onClick={() => onGoTo(index)}
-                aria-label={`Ir a pregunta ${index + 1}${answered ? ', respondida' : ''}`}
+                aria-label={`Go to question ${index + 1}${answered ? ', answered' : ''}`}
                 aria-current={isCurrent ? 'true' : undefined}
               >
                 {index + 1}
